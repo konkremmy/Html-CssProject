@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.0.0.js"></script>
+    <script src="../Scripts/umd/popper.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../CSS/Background image.css" />
+
+</head>
+<body>
+    <div class="bg-image"
+         style="background-image: url('../Assets/Images/white.jpg'); height: 100vh;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col">
+                    <nav class="navbar navbar-expand-sm bg-danger navbar-light font-italic font-weight-bolder">
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="../1 Index.html">Kremmyschool</a>
+
+                        <!-- Links -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="Courses.html">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Students.html">Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Assignments.html">Assignments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Trainers.html">Trainers</a>
+                            </li>
+
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                    Options
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="AssignmentsPerCourse.html">Assignments Per Course</a>
+                                    <a class="dropdown-item" href="StudentsPerCourse.html">Students Per Course</a>
+                                    <a class="dropdown-item" href="TrainersPerCourse.html">Trainers Per Course</a>
+                                    <a class="dropdown-item" href="AssignmentsPerStudentPerCourse.html">Assignments Per Student Per Course</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col m-3 p-3 text-center">
+
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th>Course</th>
+                                <th>Students</th>
+                                <th>Assignments</th>
+                                <th>Pair</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Algebra I</td>
+                                <td>Konstantinos Kremmydas<br />Stauros Gouleas<br />Riana Kotsiafiti</td>
+                                <td>CSS</td>
+
+
+                                <td>
+                                    <button type="button" value="edit" class="btn btn-success" data-toggle="modal" data-target="#myModal">Pair</button>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Algebra II</td>
+                                <td>Dimitris Kremmydas<br />Pavlos Kontaras</td>
+                                <td>Creating RPG Game</td>
+
+
+
+                                <td>
+                                    <button type="button" value="edit" class="btn btn-success" data-toggle="modal" data-target="#myModal">Pair</button>
+
+                            </tr>
+
+                            <tr>
+                                <td>Algebra III</td>
+                                <td>Dimtris Kremmydas<br />Thodoris Kokalis</td>
+                                <td></td>
+
+
+
+                                <td>
+                                    <button type="button" value="edit" class="btn btn-success" data-toggle="modal" data-target="#myModal">Pair</button>
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td>Physics I</td>
+                                <td>Maria Peleki<br />Riana Kotsiafiti
+                                <td>
+                                    C#<br>
+                                    HTML
+                                </td>
+
+
+
+                                <td>
+                                    <button type="button" value="edit" class="btn btn-success" data-toggle="modal" data-target="#myModal">Pair</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Physics II</td>
+                                <td>Stauros Gouleas</td>
+                                <td>Complex Numbers</td>
+
+
+                                <td>
+                                    <button type="button" value="edit" class="btn btn-success" data-toggle="modal" data-target="#myModal">Pair</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Physics III</td>
+                                <td>Konstantinos Kremmydas<br />Pavlos Kontaras</td>
+                                <td></td>
+
+
+                                <td>
+                                    <button type="button" value="edit" class="btn btn-success" data-toggle="modal" data-target="#myModal">Pair</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Algorithms</td>
+                                <td>Maria Peleki<br />Yannis Papadopoulos<br />Pavlos Kontaras</td>
+                                <td>Derivative Functions</td>
+
+
+                                <td>
+                                    <button type="button" value="edit" class="btn btn-success" data-toggle="modal" data-target="#myModal">Pair</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Programming</td>
+                                <td>Konstantinos Kremmydas<br />Stauros Gouleas<br />Riana Kotsiafiti<br />Dimitris Kremmydas</td>
+                                <td>Creating Round Objects<br />Creating 3D Game</td>
+
+
+                                <td>
+                                    <button type="button" value="edit" class="btn btn-success" data-toggle="modal" data-target="#myModal">Pair</button>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="background-color:antiquewhite">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Pair Course with Students and Assignments</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group">
+
+                                                <select class="form-group" style="color:blue; Background:chartreuse">
+                                                    <option>Konstantinos Kremmydas</option>
+                                                    <option>Dimitris Kremmydas</option>
+                                                    <option>Maria Peleki</option>
+                                                    <option>Riana Kotsiafiti</option>
+                                                    <option>Pavlos Kontaras</option>
+                                                    <option>Thodoris Kokalis</option>
+                                                    <option>Yannis Papadopoulos</option>
+                                                    <option>Stauros Gouleas</option>
+                                                </select>
+
+                                                <select class="form-group" style="color:red; Background:yellow">
+                                                    <option>HTML</option>
+                                                    <option>CSS</option>
+                                                    <option>C#</option>
+                                                    <option>Creating Round Objects</option>
+                                                    <option>Creating RPG Game</option>
+                                                    <option>Creating 3D Game</option>
+                                                    <option>Complex Numbers</option>
+                                                    <option>Derivative Functions</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

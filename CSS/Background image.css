@@ -1,0 +1,10 @@
+﻿.big-bannner {
+    background-image: url('../Assets/Images/school4.jpg');
+    background-size:cover;
+    min-height:60vh;
+    position:relative;
+   
+    
+}
+
+
